@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Info</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <h1>Info Page</h1>
+    <h2>{{header}}</h2>
+    <h3>{{message}}</h3>
+    <p>Имя:{{user_info.firstname}}<br>
+        Возраст:{{user_info.age}}</p>
+    <p>Адрес: ул. {{user_address.0}}, дом.{{user_address.1}}, кв.{{user_address.2}}</p>
+    <p>Языки: {{user_language.0}}, {{user_language.1}}</p>
+    <p>{{site}}</p>
+    {% autoescape off %}
+    {{site}}
+    {% endautoescape %}
+</body>
+</html>
